@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int n;
+        Scanner sr =new Scanner(System.in);
+        n=sr.nextInt();
+        double t;
+        
+        if(n<3 && n>0)
+        {
+           t=sr.nextDouble();
+            if(n==2){
+                double m= ((t*180)/100)+32;
+                System.out.println(m);   
+            }
+            else{
+                double p= ((t-32)*100)/180;
+                System.out.printf("%,.2f",p);
+            }
+        }
+        else{
+            System.out.printf("INVALID CHOICE");
+        }
+    }
+}
