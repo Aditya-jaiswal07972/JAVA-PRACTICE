@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+    Scanner sr = new Scanner(System.in);
+        int a;
+        a = sr.nextInt();
+        if(9<a && a<100)
+        {
+            int x=a%10;
+            int y=(a/10)%10;
+            int z=(x+y)+(x*y);
+            if(z==a){
+                System.out.println("special two digit number");
+            }
+            else{
+                System.out.println("not a special two digit number");
+            } 
+        }
+        else
+        {
+            System.out.println("invalid input");
+        }
+    }
+}
